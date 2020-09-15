@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.13.1-web\css\all.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <style>
+        
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    background: #282E3E;
+}
+.brands{
+    font-size: 33px;
+}
+/* ||||||||||||||||||||||
+||||||||||||||||||||||||| */
+
+/* large screen navigation */
+
+/* |||||||||||||||||||||||| 
+|||||||||||||||||||||||||||*/
+.full-navigation.container{
+ height:80px;
+ margin-top: 20px;
+}
+h1{
+    position: relative;
+}
+#navigation_list{
+    display: flex;
+    list-style: none;
+    
+}
+
+.full-navigation a{
+    text-decoration: none;
+    padding: 5px 15px;
+    background: #474545;
+    border-radius: 50px;
+    margin-left: 1.5rem;
+    color: #C9CAEE;
+    font-family: Century Gothic;
+    font-weight: bold;
+    box-shadow: 0px 0px 20px rgb(44, 44, 44) !important;
+}
+.full-navigation a:hover{
+    background: goldenrod;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+/* |||||||||||||||||||||
+|||||||||||||||||||||||| */
+
+/* mobile-navigation */
+
+/* |||||||||||||||||||||
+|||||||||||||||||||||||| */
+.mobile-navigation{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    background: #0d1735;
+    top: 0;
+    left: -300px;
+    text-align: center;
+    transition-duration: 300ms;
+    transition-delay: 0ms;
+    z-index: 2;
+}
+.fa-bars{
+    font-size: 25px;
+}
+.fa-bars:hover{
+    background:;
+    color: white;
+    box-shadow: 0px 0px 40px  rgb(59, 238, 223);
+}
+#return{
+    font-size: 30px;
+    margin-top: 3rem;
+}
+#return:hover{
+    font-size: 35px;
+    margin-top: 2.7rem;
+    color: goldenrod;
+}
+#mobile-list{
+    list-style: none;
+}
+#mobile-list a{
+    text-decoration: none;
+    color: rgb(206, 220, 241);
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+}
+#mobile-list a:hover{
+    margin-left: -5px;
+    color: #FBCF3B;
+    transition-duration: 1s;
+}
+#mobile-navigation-bar{
+    display: none;
+}
+@media only screen and (max-width: 769px) {
+    #mobile-navigation-bar{
+        display: block;
+        margin-top:3rem;
+    }
+    .full-navigation{
+        display: none;
+    }
+    .bg-box{
+        background: url('crypto-bg.png');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #main{
+        text-align: center;
+    }
+    .tagline{
+
+    margin-top: 10rem;
+    }
+    .small-tag{
+
+    margin-top: 8rem;
+   }
+
+   .img-container{
+       display: none;
+   }
+
+}
+/* ||||||||||||||||||||
+||||||||||||||||||||||| */
+
+/* main content */
+
+/* |||||||||||||||||||
+|||||||||||||||||||||| */
+.img-container{
+    margin-top:;
+    z-index: -1;
+}
+.tagline{
+    font-family: Arial;
+    color: #E1E2F2;
+    font-size: 30px;
+    margin-top: 5rem;
+}
+.small-tag{
+    font-family: Arial;
+    color: #C9CAEE;
+    font-size: 18px;
+    margin-top: 4rem;
+}
+.create-button{
+    font-family: Century Gothic;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+.create-button a{
+    text-decoration: none;
+    padding: 9px 18px;
+    color: #FFFFFF;
+    background: #FBCF3B;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #FBCF3B !important;
+}
+.create-button a:hover{
+    background: #141414 ;
+}
+
+
+
+/* ||||||||||||||||||
+|||||||||||||||||||||*/
+
+    /* cards  */
+
+/*|||||||||||||||||||
+|||||||||||||||||||||*/
+.card-one,.card-two,.card-three{
+    height: 460px;
+    width: 278px;
+    background:#201D2E ;
+    margin-top: 40px;
+}
+.headlines{
+    font-family: Century Gothic;
+    font-size: 35px;
+    color: #D1C491;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+.card-icon{
+    color: #FFFFFF;
+    font-size: 70px;
+    line-height: 200px;
+    text-align: center;
+}
+.card-head{
+    font-family: Century Gothic;
+    color: #C9CAEE;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 70px;
+}
+.card-text{
+    font-family: Century Gothic;
+    color: #C9CAEE;
+    font-size: 15px;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+/* ||||||||||||||||
+||||||||||||||||||| */
+
+/* carousel */
+
+/* ||||||||||||||||
+||||||||||||||||||| */
+#testimonial{
+    margin-top: 10rem;
+}
+#testimoy-headline{
+      margin-bottom: 7rem;
+}
+.testimony{
+    height: 250px;
+    width:100%;
+    transition: 1s;
+    padding:1.4em;
+    background: #201D2E;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgb(226, 206, 21);
+   
+    
+}
+#testimony-icon i{
+    font-size: 40px;
+    color: rgb(230, 227, 227);
+    padding: 0 10px;
+    line-height: 80px;
+
+}
+#testimonial .col-8{
+    border-left: 5px solid rgb(224, 40, 178);
+}
+#testimonial img{
+    margin-top:1em;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.comments{
+    text-align: left;  
+    font-family: Century Gothic;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
+
+/* ||||||||||||
+||||||||||||||| */
+
+/* footer */
+
+/* |||||||||||||
+|||||||||||||||| */
+
+footer{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+footer .ul a{
+   text-decoration: none;
+   color: #6F6F74;
+   font-family: Century Gothic;
+   font-size: 15px;
+   text-transform: capitalize;
+
+
+}
+footer .ul a:hover{
+    color: goldenrod;
+}
+footer .head a{
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+
+
+
+
+/* coyright */
+.copyright-text{
+    margin-top: 7.5rem;
+    font-family: Century Gothic;
+    font-size: 13px;
+    color: grey;
+    padding-bottom: 10px;
+    
+}
+.icons a{
+    font-size: 25px;
+    padding: 0px 20px;
+}
+
+    </style>
+</head>
+<body>
+   <!-- ------------------LARGE SCREEN NAVIGATION-------------------------------- -->
+    <div class="container full-navigation">
+        <div class="brands float-left">
+            ViperCrypto
+        </div>
+        <div class="ul float-right" id="navigation_list">
+            <div class="li"><a href="#">about us</a></div>
+            <div class="li"><a href="#">sign up</a></div>
+            <div class="li"><a href="#">login</a></div>
+        </div>
+    </div>
+
+    <!-- ----------------MOBILE NAVIGATION BAR--------------------------------------- -->
+
+    <div class="container" id="mobile-navigation-bar">
+    <div class="row">
+        <div class="col-6">
+            <div class="brands float-left">
+                ViperCrypto
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="bar float-right">
+                <div class="fa fa-bars"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------MOBILE NAVIGATION------------------------------------- -->
+ <div class="mobile-navigation">
+     <div class="ul" id="mobile-list">
+         <li id="return"> <div class="fa fa-times"></div></li>
+         <li><a href="">Home</a></li>
+         <li><a href="">About us</a></li>
+         <li><a href="">sign up</a></li>
+         <li><a href="">Login</a></li>
+         <li><a href="">Sign out</a></li>
+     </div>
+ </div>
+
+ <!-- ---------------------------NAIN BOX --------------------------------------------->
+   
+ <div class="container" id="main">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="bg-box">
+                <div class="tagline">
+                    
+                    THE EASIEST WAY TO BUY AND
+                    SELL BITCOIN IN WORLDWIDE
+                </div>
+                <div class="small-tag">
+                    Create an account with just a few clicks
+                </div>
+                <div class="create-button">
+                    <a href="#">create an account</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img-container mx-auto">
+                    <img src="crypto.png" class="img-fluid mx-auto d-block" alt="" height="" width="500">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- -------------------------SERVICES------------------------------------- -->
+   
+    <div class="container text-center">
+        <div class="headlines">
+            WORLDS’S LEADING BITCOIN EXCHANGE
+        </div>
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="card-one mx-auto">
+                     <div class="card-icon">
+                         <div class="fa fa-file-signature"></div>
+                     </div>
+                     <div class="card-head">
+                        Easy And Free Setup
+                     </div>
+                     <div class="card-text">
+                        Creating an account is fast
+                        and free – get started in just
+                        a few minutes.
+                     </div>
+                </div>
+            </div>
+        
+                <div class="col-md-4 mx-auto">
+                    <div class="card-two mx-auto">
+                         <div class="card-icon">
+                            <div class="fas fa-user-shield"></div>
+                         </div>
+                         <div class="card-head">
+                            Highly Secure
+                         </div>
+                         <div class="card-text">
+                            Security is our top priority. 
+                            We’ve built world-class 
+                            cryptocurrency systems to 
+                            keep your funds safe.
+                         </div>
+                    </div>
+                </div>
+            
+            
+                <div class="col-md-4 mx-auto">
+                    <div class="card-three mx-auto">
+                         <div class="card-icon">
+                             <div class="fa fa-handshake"></div>
+                         </div>
+                         <div class="card-head">
+                            Top Customer Service
+                         </div>
+                         <div class="card-text">
+                            Whether you’re an 
+                        experienced bitcoin trader 
+                        or a first-time buyer, we 
+                        support you at every step.
+                         </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+ 
+<!-- --------------------TESTIMONIAL------------------------------------- -->
+    <div class="container" id="testimonial">
+        <div class="headlines text-center" id="testimoy-headline">
+            CUSTOMERS TRUST ViperCrypto
+        </div>
+          <div class="testimony mx-auto" id="1">
+              <div class="row">
+                  <div class="col-4 mx-auto">
+                      <img src="testimony.jpg" alt="" class="img-fluid mx-auto d-block" width="100px" height=""> 
+                  </div>
+                  <div class="col-8">
+                      <div class="comments">
+                        The easiest way to handle bitcoin  transactions. Paying in and out has never been so easy. Very nice and friendly customer support with quick replies for any kind of questions.Keep up the good work guys.
+                      </div>
+                      <blockquote>-shafik</blockquote>
+                  </div>
+              </div>
+          </div>
+          <div class="testimony mx-auto" id="2">
+            <div class="row">
+                <div class="col-4 mx-auto">
+                    <img src="testimony.jpg" alt="" class="img-fluid mx-auto d-block" width="100px" height=""> 
+                </div>
+                <div class="col-8">
+                    <div class="comments">
+                      The easiest way to handle bitcoin transactions. Paying in and out has never been so easy.
+                     
+                    </div>
+                    <blockquote>-sazzad</blockquote>
+                </div>
+            </div>
+          </div>
+          <div class="testimony mx-auto" id="3">
+            <div class="row">
+                <div class="col-4 mx-auto">
+                    <img src="testimony.jpg" alt="" class="img-fluid mx-auto d-block" width="100px" height=""> 
+                </div>
+                <div class="col-8">
+                    <div class="comments">
+                       The easiest way to handle bitcoin transactions. Paying in and out has never been so easy. Very nice and friendly customer support with quick
+                     
+                    </div>
+                    <blockquote>-nawab</blockquote>
+                </div>
+            </div>
+          </div>
+
+          <div class="mx-auto text-center" id="testimony-icon">
+            <i class="fas fa-arrow-circle-left" id="prev"></i>
+            <i class="fas fa-arrow-circle-right" id="next"></i>
+          </div>
+        
+     </div>  
+    </div>
+         <div class="create-button mx-auto text-center">
+            <a href="#">GET STARTED</a>
+        </div>
+
+<!--------------------------------- FOOTER --------------------------------------------------->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="ul">
+                            <div class="li head"><a href="">SERVICES</a></div>
+                            <div class="li"><a href="">How to buy bitcoin</a></div>
+                            <div class="li"><a href="">How to sell bitcion</a></div>
+                            <div class="li"><a href="">Frequently Asked Questions</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ul">
+                            <div class="li head"><a href="">about</a></div>
+                            <div class="li"><a href="">About ViperCrypto</a></div>
+                            <div class="li"><a href="">Blog</a></div>
+                            <div class="li"><a href="">Careers</a></div>
+                            <div class="li"><a href="">AML Policy</a></div>
+                            <div class="li"><a href="">Privacy Policy</a></div>
+                            <div class="li"><a href="">User Agreement</a></div>
+                            <div class="li"><a href="">Finantial Statement</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="ul">
+                            <div class="li head"><a href="">get in touch</a></div>
+                            <div class="li"><a href="">Contact us</a></div>
+                            <div class="li"><a href="">Facebook</a></div>
+                            <div class="li"><a href="">Twitter</a></div>
+                            <div class="li"><a href="">Linkdin</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container copyright">
+                <div class="copyright-text mx-auto text-center">
+                    Copyright All Rights Reserved © 2020-now ViperCrypto
+                </div>
+                <div class="icons mx-auto text-center">
+                      <a href="">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                      <a href="">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                </div>
+            </div>
+        </footer>
+    <script>
+    //////////////////////// 
+    // NAVIGATION TOGGLING//
+    ///////////////////////
+    $('.fa-bars').click(function(){
+        $('.mobile-navigation').animate({'left':'0'},'slow');
+    });
+    $('#return').click(function(){
+        $('.mobile-navigation').animate({'left':'-300px'},'slow');
+    });
+
+
+    /////////////////////////////
+    // TESTIMONIAL CONTROLLING //
+    /////////////////////////////  
+      var card = 2;
+     
+      $(document).ready(function(){
+           $('#'+card).show();
+          var  prev = card - 1 ;
+           $('#'+prev).hide();
+           var next = card + 1;
+           $('#'+next).hide();
+          
+      });
+      $('#next').click(function(){
+           card = card + 1 ;
+           if(card == 4){
+               card = 1;
+           }
+          $('#'+card).show();
+            prev = card - 1 ;
+            if(prev == 0){
+                prev = 3;
+            }
+           $('#'+prev).hide();
+            next = card + 1;
+           $('#'+next).hide();
+          
+      });
+      $('#prev').click(function(){
+           card = card - 1 ;
+           if(card == 0){
+               card = 3;
+           }
+          $('#'+card).show();
+            prev = card - 1 ;
+           $('#'+prev).hide();
+            next = card + 1;
+            if(next == 4 ){
+                next = 1;
+            }
+           $('#'+next).hide();
+          
+      });
+    
+    </script>
+</body>
+</html>
